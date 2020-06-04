@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_background"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="209dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/slackey"
+            android:text="WELCOME"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textColor="#143660"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText_username"
+            android:layout_width="286dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="48dp"
+            android:drawableLeft="@drawable/username"
+            android:ems="10"
+            android:hint="Username"
+            android:textColorHint="#D9F6F3"
+            android:inputType="textPersonName"
+            android:textColor="#DFE1ED"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <EditText
+            android:id="@+id/editText2_password"
+            android:layout_width="286dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/password"
+            android:ems="10"
+            android:hint="Password"
+            android:textColorHint="#E2ECEB"
+            android:inputType="textPersonName"
+            android:textColor="#CBDFE1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_username" />
+
+        <Button
+            android:id="@+id/button_login"
+            style="@android:style/Widget.Holo.Button"
+            android:layout_width="204dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="48dp"
+            android:background="#7C0C0C"
+            android:text="Login"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_forgot" />
+
+        <Button
+            android:id="@+id/button3_register"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:onClick="toRegister"
+            android:text="Register Here"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_login"
+            app:layout_constraintVertical_bias="0.409" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="169dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="44dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Forgot password?"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText2_password"
+            app:layout_constraintTop_toBottomOf="@+id/editText2_password" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
